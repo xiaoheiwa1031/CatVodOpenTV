@@ -13,8 +13,8 @@ Not being maintained and uncertain whether they will be updated.
 
 ### **Limits**
 
-- Only local `assets://`, `github://`, `gitee://`, `http(s)://user:pwd@xxx` config is supported, and http config without basic auth is not available. 
-- Only video & cloud disk & audio book & comic & txt novel module.
+- Only local `assets://` config is supported, and network config is not available. 
+- Only video&cloud disk module.
 - Not supporting sniffing.
 - Basic JS interface support.
 - No builtin maccms api support.
@@ -32,6 +32,3 @@ Not being maintained and uncertain whether they will be updated.
 - iOS only test on `16.0+`.
 
   - Builtin config `*.ipa/Payload/Runner.app/Frameworks/App.framework/flutter_assets/asset/js/config_open.json` 
-- Android only test on `8.0+`, maybe not supported to run on emulators, not support TV.
-
-  - Builtin config `*.apk/assets/flutter_assets/asset/js/config_open.json` 
