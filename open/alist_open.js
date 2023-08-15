@@ -28,11 +28,11 @@ async function get_drives_path(tid) {
 }
 
 async function get_drives(name) {
-    const { settings, api, server } = __drives[name];
+    const { settings, api, server, headers } = __drives[name];
     if (settings.v3 == null) {
         //获取 设置
         settings.v3 = false;
-        const data = (await http.get(server + '/api/public/settings')).json().data;
+        const data = (await http.get(server + '/api/public/settings', {headers:headers})).json().data;
         if (_.isArray(data)) {
             settings.title = data.find((x) => x.key == 'title')?.value;
             settings.v3 = false;
@@ -67,6 +67,7 @@ function init(cfg) {
                 startPage: item.startPage || '/', //首页
                 showAll: item.showAll === true, //默认只显示 视频和文件夹，如果想显示全部 showAll 设置true
                 params: item.params || {},
+                headers: item.headers || {},
                 _path_param: item.params
                     ? _.sortBy(Object.keys(item.params), function (x) {
                           return -x.length;
@@ -79,11 +80,11 @@ function init(cfg) {
                     return Object.assign({}, this.params[key], { path });
                 },
                 async getPath(path) {
-                    const res = (await http.post(this.server + this.api.path, { data: this.getParams(path) })).json();
+                    const res = (await http.post(this.server + this.api.path, { headers: this.headers, data: this.getParams(path) })).json();
                     return this.settings.v3 ? res.data.content : res.data.files;
                 },
                 async getFile(path) {
-                    const res = (await http.post(this.server + this.api.file, { data: this.getParams(path) })).json();
+                    const res = (await http.post(this.server + this.api.file, { headers: this.headers, data: this.getParams(path) })).json();
                     const data = this.settings.v3 ? res.data : res.data.files[0];
                     if (!this.settings.v3) data.raw_url = data.url; //v2 的url和v3不一样
                     return data;
@@ -91,7 +92,7 @@ function init(cfg) {
                 async getOther(method, path) {
                     const data = this.getParams(path);
                     data.method = method;
-                    const res = (await http.post(this.server + this.api.other, { data: data })).json();
+                    const res = (await http.post(this.server + this.api.other, { headers: this.headers, data: data })).json();
                     return res;
                 },
                 isFolder(data) {

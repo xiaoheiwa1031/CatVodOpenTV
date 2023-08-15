@@ -8,12 +8,12 @@ async function test() {
         ext: [
             {
                 name: '🙋丫仙女',
-                server: 'http://v.elizen.me/',
+                server: 'http://192.168.50.60:5344',
                 startPage: '/',
                 showAll: false,
                 search: true,
                 headers: {
-                    Authorization: '',
+                    Authorization: 'alist-4945272b-658f-4be7-a20e-98af1c2be973kAUC1tcZ7EsJi4PyovGRwPVReLto0XxKA4QXfciAR4W4G0XwqWRLr1euFY9W2NnE',
                 },
                 params: {
                     '/abc': {
@@ -61,10 +61,10 @@ async function test() {
     files = JSON.parse(await spider.dir(files.list[0].path));
     console.log(files);
 
-    // files = JSON.parse(await spider.dir('/🙋丫仙女/电视剧/欧美/4K/00 漫威衍生美剧/L 猎鹰与冬兵4K（2021）【美剧】豆瓣评分：7.5/'));
-    // console.log(files);
+    files = JSON.parse(await spider.dir('/🙋丫仙女/每日更新/电视剧/国产剧/家有姐妹/'));
+    console.log(files);
 
-    var fileInfo = JSON.parse(await spider.file('/💦讯维云盘/热播短剧/傲世神尊/01.mp4'));
+    var fileInfo = JSON.parse(await spider.file('/🙋丫仙女/每日更新/电视剧/国产剧/家有姐妹/01.mp4'));
     console.log(fileInfo);
 
 }
