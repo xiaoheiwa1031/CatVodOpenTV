@@ -13,7 +13,7 @@ async function test() {
                 showAll: false,
                 search: true,
                 headers: {
-                    Authorization: 'alist-4945272b-658f-4be7-a20e-98af1c2be973kAUC1tcZ7EsJi4PyovGRwPVReLto0XxKA4QXfciAR4W4G0XwqWRLr1euFY9W2NnE',
+                    Authorization: 'alist-54db287a-2982-4d96-8055-0915c60025f1NhhPpwetuWup4LhAF3pBGaRvSDShoSenNLzfQzC7Bc1cpRKS6b7pXAk8GVQsOBmw',
                 },
                 params: {
                     '/abc': {

@@ -8,7 +8,7 @@ async function test() {
     //spType = '1$/每日更新$0';
     // spVid = '95873';
 
-    await spider.init({ skey: 'xiaoya-tv', ext: "https://tv.har01d.cn/vod1/Harold" });
+    await spider.init({ skey: 'xiaoya-tv', ext: "http://192.168.50.60:4567/vod" });
     var classes = JSON.parse(await spider.home(true));
     console.log(classes);
     var homeVod = JSON.parse(await spider.homeVod());

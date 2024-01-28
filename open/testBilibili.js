@@ -8,7 +8,7 @@ async function test() {
     //spType = '1$/每日更新$0';
     // spVid = '95873';
 
-    await spider.init({ skey: 'bilibili', ext: "https://tv.har01d.cn/bilibili/Harold" });
+    await spider.init({ skey: 'bilibili', ext: "http://192.168.50.60:4567/bilibili" });
     var classes = JSON.parse(await spider.home(true));
     console.log('home', classes);
     var homeVod = JSON.parse(await spider.homeVod());
