@@ -9,6 +9,13 @@
         "ext": "VOD_EXT"
       },
       {
+        "key": "bilibili",
+        "name": "🟢 BiliBili",
+        "type": 3,
+        "api": "/cat/bilibili.js",
+        "ext": "BILIBILI_EXT"
+      },
+      {
         "key": "douban",
         "name": "豆瓣",
         "type": 3,
@@ -203,13 +210,6 @@
         "name": "🟢 小贝",
         "type": 3,
         "api": "/cat/tuxiaobei_open.js"
-      },
-      {
-        "key": "bilibili",
-        "name": "\uD83D\uDD34 BiliBili",
-        "type": 3,
-        "api": "/cat/bilibili.js",
-        "ext": "BILIBILI_EXT"
       },
       {
         "key": "wogg",
