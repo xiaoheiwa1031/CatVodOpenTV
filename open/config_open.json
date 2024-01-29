@@ -59,12 +59,6 @@
         "api": "/cat/ggys_open.js"
       },
       {
-        "key": "kkys",
-        "name": "快看",
-        "type": 3,
-        "api": "/cat/kkys_open.js"
-      },
-      {
         "key": "ikanbot",
         "name": "\uD83D\uDFE2 爱看",
         "type": 3,
@@ -78,7 +72,7 @@
       },
       {
         "key": "yiqik",
-        "name": "一起",
+        "name": "\uD83D\uDFE2 一起",
         "type": 3,
         "api": "/cat/yqktv_open.js"
       },
@@ -144,7 +138,7 @@
       },
       {
         "key": "live",
-        "name": "直播",
+        "name": "\uD83D\uDFE2 直播",
         "type": 3,
         "api": "/cat/caiji.js",
         "ext": "https://tvbox.serv00.net/live.php"
