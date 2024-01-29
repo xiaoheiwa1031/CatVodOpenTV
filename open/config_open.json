@@ -9,6 +9,20 @@
         "ext": "VOD_EXT"
       },
       {
+        "key": "douban",
+        "name": "豆瓣",
+        "type": 3,
+        "indexs": 1,
+        "api": "/cat/douban_open.js"
+      },
+      {
+        "key": "doubanbb",
+        "name": "豆瓣片单",
+        "type": 3,
+        "indexs": 1,
+        "api": "/cat/doubanbb.js"
+      },
+      {
         "key": "douyu",
         "name": "🟢 斗鱼",
         "type": 3,
@@ -27,6 +41,90 @@
         "api": "/cat/lz_open.js"
       },
       {
+        "key": "sc1080",
+        "name": "\uD83D\uDFE2 圣城影视",
+        "type": 3,
+        "api": "/cat/sc1080_open.js"
+      },
+      {
+        "key": "ddys",
+        "name": "\uD83D\uDFE2 低端影视",
+        "type": 3,
+        "api": "/cat/ddys_open.js"
+      },
+      {
+        "key": "ggys",
+        "name": "\uD83D\uDFE2 高光影视",
+        "type": 3,
+        "api": "/cat/ggys_open.js"
+      },
+      {
+        "key": "kkys",
+        "name": "快看",
+        "type": 3,
+        "api": "/cat/kkys_open.js"
+      },
+      {
+        "key": "ikanbot",
+        "name": "\uD83D\uDFE2 爱看",
+        "type": 3,
+        "api": "/cat/ikanbot_open.js"
+      },
+      {
+        "key": "ng",
+        "name": "\uD83D\uDFE2 南瓜",
+        "type": 3,
+        "api": "/cat/ng_open.js"
+      },
+      {
+        "key": "yiqik",
+        "name": "一起",
+        "type": 3,
+        "api": "/cat/yqktv_open.js"
+      },
+      {
+        "key": "555",
+        "name": "\uD83D\uDFE2 五五",
+        "type": 3,
+        "api": "/cat/555dy_open.js"
+      },
+      {
+        "key": "voflix",
+        "name": "\uD83D\uDFE2 VF",
+        "type": 3,
+        "api": "/cat/voflix_open.js"
+      },
+      {
+        "key": "inmi",
+        "name": "\uD83D\uDFE2 映迷",
+        "type": 3,
+        "api": "/cat/ym_open.js"
+      },
+      {
+        "key": "wf",
+        "name": "\uD83D\uDFE2 奈飞",
+        "type": 3,
+        "api": "/cat/wf_open.js"
+      },
+      {
+        "key": "adm",
+        "name": "\uD83D\uDFE2 爱动漫",
+        "type": 3,
+        "api": "/cat/adm_open.js"
+      },
+      {
+        "key": "anfun",
+        "name": "\uD83D\uDFE2 Afun",
+        "type": 3,
+        "api": "/cat/anfun_open.js"
+      },
+      {
+        "key": "58dm",
+        "name": "\uD83D\uDFE2 五八动漫",
+        "type": 3,
+        "api": "/cat/58dm_open.js"
+      },
+      {
         "key": "bili_open",
         "name": "🟢 哔哩",
         "type": 3,
@@ -43,6 +141,13 @@
         "name": "🟢 电视",
         "type": 3,
         "api": "/cat/cntv_open.js"
+      },
+      {
+        "key": "live",
+        "name": "直播",
+        "type": 3,
+        "api": "/cat/caiji.js",
+        "ext": "https://tvbox.serv00.net/live.php"
       },
       {
         "key": "nivod",
@@ -137,20 +242,56 @@
     "sites": [
       {
         "key": "13bqg",
-        "name": "\uD83D\uDD34 笔趣阁",
+        "name": "笔趣阁",
         "type": 10,
         "api": "/cat/13bqg_open.js"
+      },
+      {
+        "key": "lbgs",
+        "name": "老白故事",
+        "type": 10,
+        "api": "/cat/lbgs_open.js"
       },
       {
         "key": "bookan",
         "name": "博看听书",
         "type": 10,
         "api": "/cat/bookan_open.js"
+      },
+      {
+        "key": "230ts_book",
+        "name": "爱上你听书",
+        "type": 10,
+        "api": "/cat/230ts_book_open.js"
       }
     ]
   },
   "comic": {
     "sites": [
+      {
+        "key": "bengou",
+        "name": "笨狗漫画",
+        "type": 20,
+        "api": "/cat/bengou_open.js"
+      },
+      {
+        "key": "mkz",
+        "name": "漫客栈漫画",
+        "type": 20,
+        "api": "/cat/mkz_open.js"
+      },
+      {
+        "key": "boutique",
+        "name": "风车漫画",
+        "type": 20,
+        "api": "/cat/boutique_comics_open.js"
+      },
+      {
+        "key": "baozimh",
+        "name": "\uD83D\uDD34 包子漫画",
+        "type": 20,
+        "api": "/cat/baozimh_open.js"
+      },
       {
         "key": "copymanga",
         "name": "\uD83D\uDD34 拷贝漫画",
