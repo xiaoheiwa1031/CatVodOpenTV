@@ -3,10 +3,11 @@ import path from 'path';
 import {zip} from 'zip-a-folder';
 import uglifyjs from 'uglify-js';
 
-const copySpider = ['app', 'xiaoya', 'bilibili', 'bili_open', 'kunyu77_open', 'czzy_open', 'czzy2_open',
-    'czzy3_open', 'duboku2_open', 'subaibai_open', 'ikanbot_open', 'kkys_open', 'duboku_open', 'alist_open',
+const copySpider = ['app', 'xiaoya', 'bilibili', 'bili_open', 'kunyu77_open', 'czzy_open', 'duboku2_open',
+    'subaibai_open', 'duboku_open', 'alist_open',
+    'douyu_open', 'huya_open', 'lz_open',
     'nivod_op', 'wogg', 'xiaoya_open', '230ts_open', 'kuqimv_open', 'boosj_open', 'ubestkid_open', 'cntv_open',
-    'tuxiaobei_open', 'dj0898_open', 'zxzj_open', 'libvio_open', 'ng_open', 'sharenice_open', 'bookan_open'];
+    'tuxiaobei_open', 'dj0898_open', 'libvio_open', 'sharenice_open', 'bookan_open'];
 
 const root = process.cwd();
 

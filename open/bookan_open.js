@@ -1,4 +1,4 @@
-import { _ } from './lib/cat.js';
+import { _ } from 'assets://js/lib/cat.js';
 
 let key = 'bookkan';
 let url = 'https://api.bookan.com.cn';
@@ -64,9 +64,8 @@ async function detail(id) {
     let data = JSON.parse(content).data;
 
     let book = {
-        audio: 1,
         book_id: id,
-        type_name: '',
+        book_type: '',
         book_year: '',
         book_area: '',
         book_remarks: '',

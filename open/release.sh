@@ -10,6 +10,7 @@ mkdir -p Payload/Runner.app/Frameworks/App.framework/flutter_assets/asset/js/ &&
 rm -rf Payload/Runner.app/Frameworks/App.framework/flutter_assets/asset/js/* && \
 cp -r dist/* Payload/Runner.app/Frameworks/App.framework/flutter_assets/asset/js/ && \
 zip -ur /home/harold/Downloads/cat.ipa Payload/Runner.app/Frameworks/App.framework/flutter_assets/asset/js/ && \
+cp cat_open.zip /home/harold/workspace/alist-tvbox/data/cat.zip && \
 mv cat_open.zip /home/harold/Downloads/ && \
 echo "cat.ipa updated"
 
