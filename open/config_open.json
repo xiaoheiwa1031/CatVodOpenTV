@@ -49,79 +49,79 @@
       },
       {
         "key": "sc1080",
-        "name": "\uD83D\uDFE2 圣城影视",
+        "name": "🟢 圣城影视",
         "type": 3,
         "api": "/cat/sc1080_open.js"
       },
       {
         "key": "ddys",
-        "name": "\uD83D\uDFE2 低端影视",
+        "name": "🟢 低端影视",
         "type": 3,
         "api": "/cat/ddys_open.js"
       },
       {
         "key": "ggys",
-        "name": "\uD83D\uDFE2 高光影视",
+        "name": "🟢 高光影视",
         "type": 3,
         "api": "/cat/ggys_open.js"
       },
       {
         "key": "ikanbot",
-        "name": "\uD83D\uDFE2 爱看",
+        "name": "🟢 爱看",
         "type": 3,
         "api": "/cat/ikanbot_open.js"
       },
       {
         "key": "ng",
-        "name": "\uD83D\uDFE2 南瓜",
+        "name": "🟢 南瓜",
         "type": 3,
         "api": "/cat/ng_open.js"
       },
       {
         "key": "yiqik",
-        "name": "\uD83D\uDFE2 一起",
+        "name": "🟢 一起",
         "type": 3,
         "api": "/cat/yqktv_open.js"
       },
       {
         "key": "555",
-        "name": "\uD83D\uDFE2 五五",
+        "name": "🟢 五五",
         "type": 3,
         "api": "/cat/555dy_open.js"
       },
       {
         "key": "voflix",
-        "name": "\uD83D\uDFE2 VF",
+        "name": "🟢 VF",
         "type": 3,
         "api": "/cat/voflix_open.js"
       },
       {
         "key": "inmi",
-        "name": "\uD83D\uDFE2 映迷",
+        "name": "🟢 映迷",
         "type": 3,
         "api": "/cat/ym_open.js"
       },
       {
         "key": "wf",
-        "name": "\uD83D\uDFE2 奈飞",
+        "name": "🟢 奈飞",
         "type": 3,
         "api": "/cat/wf_open.js"
       },
       {
         "key": "adm",
-        "name": "\uD83D\uDFE2 爱动漫",
+        "name": "🟢 爱动漫",
         "type": 3,
         "api": "/cat/adm_open.js"
       },
       {
         "key": "anfun",
-        "name": "\uD83D\uDFE2 Afun",
+        "name": "🟢 Afun",
         "type": 3,
         "api": "/cat/anfun_open.js"
       },
       {
         "key": "58dm",
-        "name": "\uD83D\uDFE2 五八动漫",
+        "name": "🟢 五八动漫",
         "type": 3,
         "api": "/cat/58dm_open.js"
       },
@@ -145,7 +145,7 @@
       },
       {
         "key": "live",
-        "name": "\uD83D\uDFE2 直播",
+        "name": "🟢 直播",
         "type": 3,
         "api": "/cat/caiji.js",
         "ext": "https://tvbox.serv00.net/live.php"
@@ -177,25 +177,25 @@
       },
       {
         "key": "rbzj",
-        "name": "\uD83D\uDFE2 派比",
+        "name": "🟢 派比",
         "type": 3,
         "api": "/cat/rbzj_open.js"
       },
       {
         "key": "1free",
-        "name": "\uD83D\uDFE2 一笑",
+        "name": "🟢 一笑",
         "type": 3,
         "api": "/cat/1free_open.js"
       },
       {
         "key": "zjm",
-        "name": "\uD83D\uDFE2 剧迷",
+        "name": "🟢 剧迷",
         "type": 3,
         "api": "/cat/zjm_open.js"
       },
       {
         "key": "suoni",
-        "name": "\uD83D\uDFE2 索尼",
+        "name": "🟢 索尼",
         "type": 3,
         "api": "/cat/caiji.js",
         "ext": {
@@ -222,55 +222,55 @@
       },
       {
         "key": "feifan",
-        "name": "\uD83D\uDFE2 非凡",
+        "name": "🟢 非凡",
         "type": 3,
         "api": "/cat/caiji.js",
         "ext": "https://cj.ffzyapi.com/api.php/provide/vod/from/ffm3u8/"
       },
       {
         "key": "feisu",
-        "name": "\uD83D\uDFE2 飞速",
+        "name": "🟢 飞速",
         "type": 3,
         "api": "/cat/caiji.js",
         "ext": "https://www.feisuzyapi.com/api.php/provide/vod/from/fsm3u8/"
       },
       {
         "key": "jszyapi",
-        "name": "\uD83D\uDFE2 极速",
+        "name": "🟢 极速",
         "type": 3,
         "api": "/cat/caiji.js",
         "ext": "https://jszyapi.com/api.php/provide/vod/at/json"
       },
       {
         "key": "hhzyapi",
-        "name": "\uD83D\uDFE2 火狐",
+        "name": "🟢 火狐",
         "type": 3,
         "api": "/cat/caiji.js",
         "ext": "https://hhzyapi.com/api.php/provide/vod/at/json"
       },
       {
         "key": "apitiankongapi",
-        "name": "\uD83D\uDFE2 天空",
+        "name": "🟢 天空",
         "type": 3,
         "api": "/cat/caiji.js",
         "ext": "https://api.tiankongapi.com/api.php/provide/vod/at/json"
       },
       {
         "key": "moviegsl99",
-        "name": "\uD83D\uDFE2 新马",
+        "name": "🟢 新马",
         "type": 3,
         "api": "/cat/caiji.js",
         "ext": "https://movie.gsl99.com/api.php/provide/vod/at/json"
       },
       {
         "key": "sharenice",
-        "name": "\uD83D\uDFE2 短视频",
+        "name": "🟢 短视频",
         "type": 3,
         "api": "/cat/sharenice_open.js"
       },
       {
         "key": "kuwo",
-        "name": "\uD83D\uDFE2 短剧",
+        "name": "🟢 短剧",
         "type": 3,
         "api": "/cat/kuwo_open.js"
       },
