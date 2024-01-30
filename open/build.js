@@ -3,14 +3,14 @@ import path from 'path';
 import {zip} from 'zip-a-folder';
 import uglifyjs from 'uglify-js';
 
-const copySpider = ['app', 'xiaoya', 'bilibili', 'bili_open', 'kunyu77_open', 'czzy_open', 'duboku2_open',
+const copySpider = ['app', 'xiaoya', 'bilibili', 'bili_open', 'kunyu77_open', 'czzy_open', 'duboku2_open', 'wobg_open',
     'subaibai_open', 'duboku_open', 'alist_open', '13bqg_open', 'sc1080_open', 'ddys_open', 'ggys_open', 'ikanbot_open',
     'douyu_open', 'huya_open', 'lz_open', 'bengou_open', 'mkz_open', 'baozimh_open', 'boutique_comics_open', 'anfun_open',
     'nivod_op', 'wogg', 'xiaoya_open', '230ts_open', '230ts_book_open', 'kuqimv_open', 'boosj_open', 'ubestkid_open', 'cntv_open',
-    'tuxiaobei_open', 'dj0898_open', 'libvio_open', 'sharenice_open', 'bookan_open'];
+    'tuxiaobei_open', 'dj0898_open', 'libvio_open', 'sharenice_open', 'bookan_open', 'sharenice_open', '1free_open'];
 
 const files = ['lbgs_open', 'douban_open', 'doubanbb', 'ng_open', 'ikanbot_open', '555dy_open', 'yqktv_open',
-    'voflix_open', 'ym_open', 'caiji', 'adm_open', '58dm_open', 'wf_open']
+    'voflix_open', 'ym_open', 'caiji', 'adm_open', '58dm_open', 'wf_open', 'kuwo_open', 'rbzj_open', 'zjm_open']
 
 const root = process.cwd();
 

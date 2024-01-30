@@ -176,6 +176,105 @@
         "api": "/cat/subaibai_open.js"
       },
       {
+        "key": "rbzj",
+        "name": "\uD83D\uDFE2 派比",
+        "type": 3,
+        "api": "/cat/rbzj_open.js"
+      },
+      {
+        "key": "1free",
+        "name": "\uD83D\uDFE2 一笑",
+        "type": 3,
+        "api": "/cat/1free_open.js"
+      },
+      {
+        "key": "zjm",
+        "name": "\uD83D\uDFE2 剧迷",
+        "type": 3,
+        "api": "/cat/zjm_open.js"
+      },
+      {
+        "key": "suoni",
+        "name": "\uD83D\uDFE2 索尼",
+        "type": 3,
+        "api": "/cat/caiji.js",
+        "ext": {
+          "url": "https://suoniapi.com/api.php/provide/vod/from/snm3u8/",
+          "categories": [
+            "动作片",
+            "喜剧片",
+            "爱情片",
+            "科幻片",
+            "恐怖片",
+            "剧情片",
+            "战争片",
+            "国产剧",
+            "欧美剧",
+            "韩剧",
+            "日剧",
+            "港剧",
+            "台剧",
+            "海外剧",
+            "大陆综艺",
+            "国产动漫"
+          ]
+        }
+      },
+      {
+        "key": "feifan",
+        "name": "\uD83D\uDFE2 非凡",
+        "type": 3,
+        "api": "/cat/caiji.js",
+        "ext": "https://cj.ffzyapi.com/api.php/provide/vod/from/ffm3u8/"
+      },
+      {
+        "key": "feisu",
+        "name": "\uD83D\uDFE2 飞速",
+        "type": 3,
+        "api": "/cat/caiji.js",
+        "ext": "https://www.feisuzyapi.com/api.php/provide/vod/from/fsm3u8/"
+      },
+      {
+        "key": "jszyapi",
+        "name": "\uD83D\uDFE2 极速",
+        "type": 3,
+        "api": "/cat/caiji.js",
+        "ext": "https://jszyapi.com/api.php/provide/vod/at/json"
+      },
+      {
+        "key": "hhzyapi",
+        "name": "\uD83D\uDFE2 火狐",
+        "type": 3,
+        "api": "/cat/caiji.js",
+        "ext": "https://hhzyapi.com/api.php/provide/vod/at/json"
+      },
+      {
+        "key": "apitiankongapi",
+        "name": "\uD83D\uDFE2 天空",
+        "type": 3,
+        "api": "/cat/caiji.js",
+        "ext": "https://api.tiankongapi.com/api.php/provide/vod/at/json"
+      },
+      {
+        "key": "moviegsl99",
+        "name": "\uD83D\uDFE2 新马",
+        "type": 3,
+        "api": "/cat/caiji.js",
+        "ext": "https://movie.gsl99.com/api.php/provide/vod/at/json"
+      },
+      {
+        "key": "sharenice",
+        "name": "\uD83D\uDFE2 短视频",
+        "type": 3,
+        "api": "/cat/sharenice_open.js"
+      },
+      {
+        "key": "kuwo",
+        "name": "\uD83D\uDFE2 短剧",
+        "type": 3,
+        "api": "/cat/kuwo_open.js"
+      },
+      {
         "key": "kuqimv",
         "name": "🟢 酷奇",
         "type": 3,
@@ -210,6 +309,13 @@
         "name": "🟢 小贝",
         "type": 3,
         "api": "/cat/tuxiaobei_open.js"
+      },
+      {
+        "key": "wobg",
+        "name": "\uD83D\uDD34 玩偶表哥",
+        "type": 3,
+        "api": "/cat/wobg_open.js",
+        "ext": "ALI_TOKEN"
       },
       {
         "key": "wogg",
