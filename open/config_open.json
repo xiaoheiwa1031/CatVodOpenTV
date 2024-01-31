@@ -3,9 +3,16 @@
     "sites": [
       {
         "key": "xiaoya-tvbox",
-        "name": "🟢 小雅Tv",
+        "name": "🟢 小雅TV",
         "type": 3,
         "api": "/cat/xiaoya.js",
+        "ext": "VOD1_EXT"
+      },
+      {
+        "key": "xiaoya-alist",
+        "name": "🔍 AList",
+        "type": 3,
+        "api": "/cat/xiaoya_alist.js",
         "ext": "VOD_EXT"
       },
       {
@@ -30,6 +37,13 @@
         "api": "/cat/doubanbb.js"
       },
       {
+        "key": "玩偶表哥",
+        "name": "🟢 表哥",
+        "type": 3,
+        "api": "/cat/wobg_open.js",
+        "ext": "ALI_TOKEN"
+      },
+      {
         "key": "douyu",
         "name": "🟢 斗鱼",
         "type": 3,
@@ -40,6 +54,15 @@
         "name": "🟢 虎牙",
         "type": 3,
         "api": "/cat/huya_open.js"
+      },
+      {
+        "key": "哔哩直播",
+        "name": "🟢 哔哩直播",
+        "type": 3,
+        "api": "/cat/bililive_open.js",
+        "ext": {
+          "cookie": "DedeUserID=690781341;DedeUserID__ckMd5=cabc96906269c5b6;SESSDATA=2245ba24%2C1684212125%2C466fd%2Ab2;bili_jct=de6fdb60c10f8a83910aa55d79407b4e;"
+        }
       },
       {
         "key": "lz",
@@ -70,12 +93,6 @@
         "name": "🟢 爱看",
         "type": 3,
         "api": "/cat/ikanbot_open.js"
-      },
-      {
-        "key": "ng",
-        "name": "🟢 南瓜",
-        "type": 3,
-        "api": "/cat/ng_open.js"
       },
       {
         "key": "yiqik",
@@ -263,6 +280,44 @@
         "ext": "https://movie.gsl99.com/api.php/provide/vod/at/json"
       },
       {
+        "key": "tiantian",
+        "name": "🟢 天天",
+        "type": 3,
+        "api": "/cat/tiantian_open.js"
+      },
+      {
+        "key": "南瓜",
+        "name": "🟢 南瓜①",
+        "type": 3,
+        "api": "/cat/ng_open.js"
+      },
+      {
+        "key": "nangua",
+        "name": "🟢 南瓜②",
+        "type": 3,
+        "api": "/cat/nangua_open.js"
+      },
+      {
+        "key": "巧技一",
+        "name": "🟢 巧技①",
+        "type": 3,
+        "api": "/cat/qiao2_open.js",
+        "ext": "https://jihulab.com/qiaoji/open/-/raw/main/qiaoji2"
+      },
+      {
+        "key": "巧技二",
+        "name": "🟢 巧技②",
+        "type": 3,
+        "api": "/cat/qiao2_open.js",
+        "ext": "https://jihulab.com/qiaoji/open/-/raw/main/qiaoji3"
+      },
+      {
+        "key": "图图影视",
+        "name": "🟢 图图",
+        "type": 3,
+        "api": "/cat/tutu_open.js"
+      },
+      {
         "key": "sharenice",
         "name": "🟢 短视频",
         "type": 3,
@@ -311,10 +366,38 @@
         "api": "/cat/tuxiaobei_open.js"
       },
       {
-        "key": "wobg",
-        "name": "\uD83D\uDD34 玩偶表哥",
+        "key": "阿里盘搜",
+        "name": "🔍 盘搜",
         "type": 3,
-        "api": "/cat/wobg_open.js",
+        "api": "/cat/pansou_open.js",
+        "ext": "ALI_TOKEN"
+      },
+      {
+        "key": "阿里七夜",
+        "name": "🔍 七夜",
+        "type": 3,
+        "api": "/cat/dovx_open.js",
+        "ext": "ALI_TOKEN"
+      },
+      {
+        "key": "小纸条",
+        "name": "🔍 纸条",
+        "type": 3,
+        "api": "/cat/xiaozhitiao_open.js",
+        "ext": "ALI_TOKEN"
+      },
+      {
+        "key": "UP云搜",
+        "name": "🔍 云搜",
+        "type": 3,
+        "api": "/cat/upyun_open.js",
+        "ext": "ALI_TOKEN"
+      },
+      {
+        "key": "云盘4K",
+        "name": "🔍 云盘",
+        "type": 3,
+        "api": "/cat/yunpan4k_open.js",
         "ext": "ALI_TOKEN"
       },
       {
