@@ -1,6 +1,5 @@
 import {Crypto, load, _} from './lib/cat.js';
 
-let key = 'bilibili';
 let url = '';
 let siteKey = '';
 let siteType = 0;

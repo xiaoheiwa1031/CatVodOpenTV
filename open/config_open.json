@@ -2,27 +2,6 @@
   "video": {
     "sites": [
       {
-        "key": "xiaoya-tvbox",
-        "name": "🟢 小雅TV",
-        "type": 3,
-        "api": "/cat/xiaoya.js",
-        "ext": "VOD1_EXT"
-      },
-      {
-        "key": "xiaoya-alist",
-        "name": "🔍 AList",
-        "type": 3,
-        "api": "/cat/xiaoya_alist.js",
-        "ext": "VOD_EXT"
-      },
-      {
-        "key": "bilibili",
-        "name": "🟢 BiliBili",
-        "type": 3,
-        "api": "/cat/bilibili.js",
-        "ext": "BILIBILI_EXT"
-      },
-      {
         "key": "douban",
         "name": "豆瓣",
         "type": 3,
@@ -491,18 +470,6 @@
         "type": 40,
         "api": "/cat/alist_open.js",
         "ext": [
-          {
-            "name": "小雅",
-            "server": "ALIST_URL",
-            "startPage": "/",
-            "showAll": false,
-            "search": true,
-            "headers": {
-              "Authorization": "ALIST_TOKEN"
-            },
-            "params": {
-            }
-          },
           {
             "name": "🐋一只鱼",
             "server": "https://alist.youte.ml"

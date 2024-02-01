@@ -11,6 +11,7 @@ const cookie = {};
 async function request(reqUrl, referer, mth, data, hd) {
     const headers = {
         'User-Agent': UA,
+        'X-CLIENT': 'open',
         Cookie: _.map(cookie, (value, key) => {
             return `${key}=${value}`;
         }).join(';'),

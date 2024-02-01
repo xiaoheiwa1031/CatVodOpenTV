@@ -1,6 +1,5 @@
 import { Crypto, load, _ } from './lib/cat.js';
 
-let key = 'xiaoya-tv';
 let url = '';
 let siteKey = '';
 let siteType = 0;
@@ -12,6 +11,7 @@ const cookie = {};
 async function request(reqUrl, referer, mth, data, hd) {
     const headers = {
         'User-Agent': UA,
+        'X-CLIENT': 'open',
         Cookie: _.map(cookie, (value, key) => {
             return `${key}=${value}`;
         }).join(';'),
