@@ -20,7 +20,7 @@
         "name": "🟢 表哥",
         "type": 3,
         "api": "/cat/wobg_open.js",
-        "ext": "ALI_TOKEN"
+        "ext": "阿里token"
       },
       {
         "key": "douyu",
@@ -355,42 +355,42 @@
         "name": "🔍 盘搜",
         "type": 3,
         "api": "/cat/pansou_open.js",
-        "ext": "ALI_TOKEN"
+        "ext": "阿里token"
       },
       {
         "key": "阿里七夜",
         "name": "🔍 七夜",
         "type": 3,
         "api": "/cat/dovx_open.js",
-        "ext": "ALI_TOKEN"
+        "ext": "阿里token"
       },
       {
         "key": "小纸条",
         "name": "🔍 纸条",
         "type": 3,
         "api": "/cat/xiaozhitiao_open.js",
-        "ext": "ALI_TOKEN"
+        "ext": "阿里token"
       },
       {
         "key": "UP云搜",
         "name": "🔍 云搜",
         "type": 3,
         "api": "/cat/upyun_open.js",
-        "ext": "ALI_TOKEN"
+        "ext": "阿里token"
       },
       {
         "key": "云盘4K",
         "name": "🔍 云盘",
         "type": 3,
         "api": "/cat/yunpan4k_open.js",
-        "ext": "ALI_TOKEN"
+        "ext": "阿里token"
       },
       {
         "key": "wogg",
         "name": "\uD83D\uDD34 玩偶",
         "type": 3,
         "api": "/cat/wogg.js",
-        "ext": "ALI_TOKEN"
+        "ext": "阿里token"
       },
       {
         "key": "kunyu77",
@@ -477,14 +477,6 @@
         "api": "/cat/alist_open.js",
         "ext": [
           {
-            "name": "🐋一只鱼",
-            "server": "https://alist.youte.ml"
-          },
-          {
-            "name": "🌊七米蓝",
-            "server": "https://al.chirmyram.com"
-          },
-          {
             "name": "🐉神族九帝",
             "server": "https://alist.shenzjd.com"
           },
@@ -497,12 +489,8 @@
             "server": "https://pan.bashroot.top"
           },
           {
-            "name": "💢repl",
-            "server": "https://ali.liucn.repl.co"
-          },
-          {
-            "name": "讯维云盘",
-            "server": "https://pan.xwbeta.com"
+            "name": "🌊七米蓝",
+            "server": "https://al.chirmyram.com"
           }
         ]
       }
