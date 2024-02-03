@@ -44,6 +44,12 @@
         }
       },
       {
+        "key": "kkys",
+        "name": "🟢 快看",
+        "type": 3,
+        "api": "/cat/kkys_open.js"
+      },
+      {
         "key": "lz",
         "name": "🟢 量子",
         "type": 3,
