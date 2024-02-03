@@ -16,34 +16,6 @@
         "api": "./doubanbb.js"
       },
       {
-        "key": "玩偶表哥",
-        "name": "🟢 表哥",
-        "type": 3,
-        "api": "./wobg_open.js",
-        "ext": "阿里token"
-      },
-      {
-        "key": "douyu",
-        "name": "🟢 斗鱼",
-        "type": 3,
-        "api": "./douyu_open.js"
-      },
-      {
-        "key": "huya",
-        "name": "🟢 虎牙",
-        "type": 3,
-        "api": "./huya_open.js"
-      },
-      {
-        "key": "哔哩直播",
-        "name": "🟢 哔哩直播",
-        "type": 3,
-        "api": "./bililive_open.js",
-        "ext": {
-          "cookie": "DedeUserID=690781341;DedeUserID__ckMd5=cabc96906269c5b6;SESSDATA=2245ba24%2C1684212125%2C466fd%2Ab2;bili_jct=de6fdb60c10f8a83910aa55d79407b4e;"
-        }
-      },
-      {
         "key": "kkys",
         "name": "🟢 快看",
         "type": 3,
@@ -108,6 +80,34 @@
         "name": "🟢 奈飞",
         "type": 3,
         "api": "./wf_open.js"
+      },
+      {
+        "key": "玩偶表哥",
+        "name": "🟢 表哥",
+        "type": 3,
+        "api": "./wobg_open.js",
+        "ext": "阿里token"
+      },
+      {
+        "key": "douyu",
+        "name": "🟢 斗鱼",
+        "type": 3,
+        "api": "./douyu_open.js"
+      },
+      {
+        "key": "huya",
+        "name": "🟢 虎牙",
+        "type": 3,
+        "api": "./huya_open.js"
+      },
+      {
+        "key": "哔哩直播",
+        "name": "🟢 哔哩直播",
+        "type": 3,
+        "api": "./bililive_open.js",
+        "ext": {
+          "cookie": "DedeUserID=690781341;DedeUserID__ckMd5=cabc96906269c5b6;SESSDATA=2245ba24%2C1684212125%2C466fd%2Ab2;bili_jct=de6fdb60c10f8a83910aa55d79407b4e;"
+        }
       },
       {
         "key": "adm",
