@@ -12,7 +12,7 @@ const copySpider = ['app', 'xiaoya', 'xiaoya_alist', 'bilibili', 'bili_open', 'k
 
 const files = ['lbgs_open', 'douban_open', 'doubanbb', 'ng_open', 'ikanbot_open', '555dy_open', 'yqktv_open',
     'voflix_open', 'ym_open', 'caiji', 'adm_open', '58dm_open', 'wf_open', 'kuwo_open', 'rbzj_open', 'zjm_open',
-    'tiantian_open', 'nangua_open', 'ng_open', 'qiao2_open', 'tutu_open', 'bililive_open']
+    'tiantian_open', 'nangua_open', 'ng_open', 'qiao2_open', 'tutu_open', 'bililive_open', 'acgwd_open']
 
 const root = process.cwd();
 

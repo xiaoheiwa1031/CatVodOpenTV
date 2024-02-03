@@ -455,6 +455,12 @@
         "api": "./boutique_comics_open.js"
       },
       {
+        "key": "acgwd_open",
+        "name": "acgwd漫画",
+        "type": 20,
+        "api": "./acgwd_open.js"
+      },
+      {
         "key": "baozimh",
         "name": "\uD83D\uDD34 包子漫画",
         "type": 20,
