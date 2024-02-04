@@ -46,12 +46,6 @@
         "api": "./ggys_open.js"
       },
       {
-        "key": "ikanbot",
-        "name": "🟢 爱看",
-        "type": 3,
-        "api": "./ikanbot_open.js"
-      },
-      {
         "key": "yiqik",
         "name": "🟢 一起",
         "type": 3,
@@ -80,13 +74,6 @@
         "name": "🟢 奈飞",
         "type": 3,
         "api": "./wf_open.js"
-      },
-      {
-        "key": "玩偶表哥",
-        "name": "🟢 表哥",
-        "type": 3,
-        "api": "./wobg_open.js",
-        "ext": "阿里token"
       },
       {
         "key": "douyu",
@@ -134,12 +121,6 @@
         "api": "./bili_open.js"
       },
       {
-        "key": "libvio",
-        "name": "🟢 libvio",
-        "type": 3,
-        "api": "./libvio_open.js"
-      },
-      {
         "key": "cntv",
         "name": "🟢 电视",
         "type": 3,
@@ -164,12 +145,6 @@
         "name": "🟡 独播✈",
         "type": 3,
         "api": "./duboku_open.js"
-      },
-      {
-        "key": "duboku2",
-        "name": "🟢 独播",
-        "type": 3,
-        "api": "./duboku2_open.js"
       },
       {
         "key": "subaibai",
@@ -237,38 +212,11 @@
         "ext": "https://www.feisuzyapi.com/api.php/provide/vod/from/fsm3u8/"
       },
       {
-        "key": "jszyapi",
-        "name": "🟢 极速",
-        "type": 3,
-        "api": "./caiji.js",
-        "ext": "https://jszyapi.com/api.php/provide/vod/at/json"
-      },
-      {
-        "key": "hhzyapi",
-        "name": "🟢 火狐",
-        "type": 3,
-        "api": "./caiji.js",
-        "ext": "https://hhzyapi.com/api.php/provide/vod/at/json"
-      },
-      {
-        "key": "apitiankongapi",
-        "name": "🟢 天空",
-        "type": 3,
-        "api": "./caiji.js",
-        "ext": "https://api.tiankongapi.com/api.php/provide/vod/at/json"
-      },
-      {
         "key": "moviegsl99",
         "name": "🟢 新马",
         "type": 3,
         "api": "./caiji.js",
         "ext": "https://movie.gsl99.com/api.php/provide/vod/at/json"
-      },
-      {
-        "key": "tiantian",
-        "name": "🟢 天天",
-        "type": 3,
-        "api": "./tiantian_open.js"
       },
       {
         "key": "南瓜",
@@ -295,6 +243,19 @@
         "type": 3,
         "api": "./qiao2_open.js",
         "ext": "https://jihulab.com/qiaoji/open/-/raw/main/qiaoji3"
+      },
+      {
+        "key": "czzy",
+        "name": "🟢 厂长",
+        "type": 3,
+        "api": "./czzy_open.js"
+      },
+      {
+        "key": "玩偶表哥",
+        "name": "🟢 表哥",
+        "type": 3,
+        "api": "./wobg_open.js",
+        "ext": "阿里token"
       },
       {
         "key": "图图影视",
@@ -386,23 +347,43 @@
         "ext": "阿里token"
       },
       {
-        "key": "wogg",
-        "name": "\uD83D\uDD34 玩偶",
+        "key": "jszyapi",
+        "name": "🟢 极速",
         "type": 3,
-        "api": "./wogg.js",
-        "ext": "阿里token"
+        "api": "./caiji.js",
+        "ext": "https://jszyapi.com/api.php/provide/vod/at/json"
       },
       {
-        "key": "kunyu77",
-        "name": "\uD83D\uDD34 七七",
+        "key": "hhzyapi",
+        "name": "🟢 火狐",
         "type": 3,
-        "api": "./kunyu77_open.js"
+        "api": "./caiji.js",
+        "ext": "https://hhzyapi.com/api.php/provide/vod/at/json"
       },
       {
-        "key": "czzy",
-        "name": "\uD83D\uDD34 厂长",
+        "key": "apitiankongapi",
+        "name": "🟢 天空",
         "type": 3,
-        "api": "./czzy_open.js"
+        "api": "./caiji.js",
+        "ext": "https://api.tiankongapi.com/api.php/provide/vod/at/json"
+      },
+      {
+        "key": "duboku2",
+        "name": "🟢 独播",
+        "type": 3,
+        "api": "./duboku2_open.js"
+      },
+      {
+        "key": "tiantian",
+        "name": "🟢 天天",
+        "type": 3,
+        "api": "./tiantian_open.js"
+      },
+      {
+        "key": "libvio",
+        "name": "🟢 libvio",
+        "type": 3,
+        "api": "./libvio_open.js"
       }
     ]
   },

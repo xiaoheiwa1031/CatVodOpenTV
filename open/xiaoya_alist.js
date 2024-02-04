@@ -1,4 +1,4 @@
-import { Crypto, load, _ } from './lib/cat.js';
+import { _ } from './lib/cat.js';
 
 let url = '';
 let siteKey = '';
@@ -8,7 +8,7 @@ const UA = 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit
 
 const cookie = {};
 
-async function request(reqUrl, referer, mth, data, hd) {
+async function request(reqUrl, referer, mth, data) {
     const headers = {
         'User-Agent': UA,
         'X-CLIENT': 'open',
@@ -26,7 +26,6 @@ async function request(reqUrl, referer, mth, data, hd) {
     return res.content;
 }
 
-// cfg = {skey: siteKey, ext: extend}
 async function init(cfg) {
     siteKey = cfg.skey;
     siteType = cfg.stype;
