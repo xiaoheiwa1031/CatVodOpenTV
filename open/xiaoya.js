@@ -57,13 +57,12 @@ async function category(tid, pg, filter, extend) {
 }
 
 async function detail(id) {
-    const part = id.split('$')
-    const api = url + '?ids=' + part[0] + '$' + part[1];
+    const api = url + '?ids=' + id;
     return await request(api);
 }
 
 async function play(flag, id, flags) {
-    const api = url.replace('/vod1', '/play') + '?id=' + id + '&from=open&flag=' + flag;
+    const api = url.replace('/vod1', '/play') + '?id=' + id + '&from=open';
     return await request(api);
 }
 
