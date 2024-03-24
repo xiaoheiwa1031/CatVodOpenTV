@@ -9,7 +9,7 @@ async function request(reqUrl) {
         method: 'get',
         headers: {
             'User-Agent': UA,
-            'X-CLIENT': 'open',
+            'X-CLIENT': 'node',
         }
     });
     return res.data;
@@ -53,7 +53,7 @@ async function detail(inReq, _outResp) {
 
 async function play(inReq, _outResp) {
     const id = inReq.body.id;
-    const api = url.replace('/bilibili', '/play') + '?bvid=' + id + '&from=open';
+    const api = url.replace('/bilibili', '/play') + '?bvid=' + id + '&from=node';
     return await request(api);
 }
 

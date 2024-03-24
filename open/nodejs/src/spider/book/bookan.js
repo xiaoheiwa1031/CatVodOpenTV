@@ -1,69 +1,132 @@
 import req from '../../util/req.js';
+import pkg from 'lodash';
+const { _ } = pkg;
 
-let url = '';
+let url = 'https://api.bookan.com.cn';
 
-const UA = 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1';
-
-async function request(reqUrl) {
+async function request(reqUrl, agentSp) {
     let res = await req(reqUrl, {
         method: 'get',
-        headers: {
-            'User-Agent': UA,
-            'X-CLIENT': 'open',
-        }
     });
     return res.data;
 }
 
-async function init(inReq) {
-    url = inReq.server.config.xiaoya_tv.url;
+// cfg = {skey: siteKey, ext: extend}
+async function init(inReq, _outResp) {
     return {}
 }
 
-async function home(_inReq, _outResp) {
-    return await request(url);
-}
-
-async function homeVod() {
-    return '{}';
+async function home(filter) {
+    return ({
+        class: [
+            { type_id: '1305', type_name: '少年读物' },
+            { type_id: '1304', type_name: '儿童文学' },
+            { type_id: '1320', type_name: '国学经典' },
+            { type_id: '1306', type_name: '文艺少年' },
+            { type_id: '1309', type_name: '育儿心经' },
+            { type_id: '1310', type_name: '心理哲学' },
+            { type_id: '1307', type_name: '青春励志' },
+            { type_id: '1312', type_name: '历史小说' },
+            { type_id: '1303', type_name: '故事会' },
+            { type_id: '1317', type_name: '音乐戏剧' },
+            { type_id: '1319', type_name: '相声评书' },
+        ],
+    });
 }
 
 async function category(inReq, _outResp) {
     const tid = inReq.body.id;
     let pg = inReq.body.page;
-    const filter = inReq.body.filter;
-    const extend = inReq.body.filters;
-    if (pg <= 0) pg = 1;
-    let api = url + '?t=' + tid + '&pg=' + pg;
-    if (extend) {
-        let data = Object.entries(extend).map(([key, val] = entry) => {
-            return '&' + key + '=' + val;
-        })
-        api += data;
-        api += '&f=' + encodeURIComponent(JSON.stringify(extend));
+    pg = pg || 1;
+    if (pg == 0) pg = 1;
+    let content = await request(`${url}/voice/book/list?instance_id=25304&page=${pg}&category_id=${tid}&num=24`);
+    let data = content.data;
+    let books = [];
+    for (const book of data.list) {
+        books.push({
+            book_id: book.id,
+            book_name: book.name,
+            book_pic: book.cover,
+            book_remarks: book.extra.author,
+        });
     }
-    return await request(api);
+    return ({
+        page: data.current_page,
+        pagecount: data.last_page,
+        limit: 24,
+        total: data.total,
+        list: books,
+    });
 }
 
 async function detail(inReq, _outResp) {
-    const ids = !Array.isArray(inReq.body.id) ? [inReq.body.id] : inReq.body.id;
-    const api = url + '?ids=' + ids;
-    return await request(api);
+    const id = inReq.body.id;
+    let content = await request(`${url}/voice/album/units?album_id=${id}&page=1&num=200&order=1`);
+    let data = content.data;
+
+    let book = {
+        audio: 1,
+        book_id: id,
+        type_name: '',
+        book_year: '',
+        book_area: '',
+        book_remarks: '',
+        book_actor: '',
+        book_director: '',
+        book_content: '',
+    };
+    let us = _.map(data.list, function (b) {
+        return formatPlayUrl(b.title) + '$' + b.file;
+    }).join('#');
+    book.volumes = '书卷';
+    book.urls = us;
+
+    return ({
+        list: [book],
+    });
 }
+
+function formatPlayUrl(name) {
+    return name
+        .trim()
+        .replace(/<|>|《|》/g, '')
+        .replace(/\$|#/g, ' ')
+        .trim();
+}
+
+async function proxy(segments, headers) {}
 
 async function play(inReq, _outResp) {
     const id = inReq.body.id;
-    const api = url.replace('/vod1', '/play') + '?id=' + id + '&from=open';
-    return await request(api);
+    return ({
+        parse: 0,
+        url: id,
+    });
 }
 
 async function search(inReq, _outResp) {
-    const pg = inReq.body.page;
     const wd = inReq.body.wd;
-    let page = pg || 1;
-    if (page == 0) page = 1;
-    const api = url + '?wd=' + wd;
-    return await request(api);
+    let pg = inReq.body.page;
+    pg = pg || 1;
+    if (pg == 0) pg = 1;
+    let content = await request(`https://es.bookan.com.cn/api/v3/voice/book?instanceId=25304&keyword=${wd}&pageNum=${pg}&limitNum=20`);
+    let data = content.data;
+    let books = [];
+    for (const book of data.list) {
+        books.push({
+            book_id: book.id,
+            book_name: book.name,
+            book_pic: book.cover,
+            book_remarks: book.extra.author,
+        });
+    }
+    return ({
+        page: data.current_page,
+        pagecount: data.last_page,
+        limit: 20,
+        total: data.total,
+        list: books,
+    });
 }
 
 async function test(inReq, outResp) {
@@ -81,7 +144,7 @@ async function test(inReq, outResp) {
         resp = await inReq.server.inject().post(`${prefix}/home`);
         dataResult.home = resp.json();
         printErr(resp.json());
-        if (dataResult.home.class.length > 0) {
+        if (dataResult.home.class && dataResult.home.class.length > 0) {
             resp = await inReq.server.inject().post(`${prefix}/category`).payload({
                 id: dataResult.home.class[0].type_id,
                 page: 1,
@@ -90,7 +153,7 @@ async function test(inReq, outResp) {
             });
             dataResult.category = resp.json();
             printErr(resp.json());
-            if (dataResult.category.list.length > 0) {
+            if (dataResult.category.list &&dataResult.category.list.length > 0) {
                 resp = await inReq.server.inject().post(`${prefix}/detail`).payload({
                     id: dataResult.category.list[0].vod_id, // dataResult.category.list.map((v) => v.vod_id),
                 });
@@ -120,7 +183,7 @@ async function test(inReq, outResp) {
             }
         }
         resp = await inReq.server.inject().post(`${prefix}/search`).payload({
-            wd: '家有姐妹',
+            wd: '爱',
             page: 1,
         });
         dataResult.search = resp.json();
@@ -129,17 +192,17 @@ async function test(inReq, outResp) {
     } catch (err) {
         console.error(err);
         outResp.code(500);
-        return {err: err.message, tip: 'check debug console output'};
+        return { err: err.message, tip: 'check debug console output' };
     }
 }
 
 export default {
     meta: {
-        key: 'xiaoya-tv',
-        name: '小雅TV',
-        type: 3,
+        key: 'bookan',
+        name: '博看听书',
+        type: 10,
     },
-    api: async (fastify) => {
+   api: async (fastify) => {
         fastify.post('/init', init);
         fastify.post('/home', home);
         fastify.post('/category', category);
