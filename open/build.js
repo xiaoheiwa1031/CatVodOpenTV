@@ -17,6 +17,7 @@ const files = ['lbgs_open', 'douban_open', 'doubanbb', 'ng_open', '555dy_open', 
 const root = process.cwd();
 
 const src = path.join(root);
+const node = path.join(root, 'nodejs/dist');
 const out = path.join(root, 'dist');
 
 function minify(s, d) {
@@ -72,6 +73,10 @@ function src2Out() {
 src2Out();
 
 fs.copyFileSync(path.join(src, 'config_open.json'), path.join(out, 'config_open.json'));
+fs.copyFileSync(path.join(node, 'index.js'), path.join(out, 'index.js'));
+fs.copyFileSync(path.join(node, 'index.js.md5'), path.join(out, 'index.js.md5'));
+fs.copyFileSync(path.join(node, 'index.config.js'), path.join(out, 'index.config.js'));
+//fs.copyFileSync(path.join(node, 'index.config.js.md5'), path.join(out, 'index.config.js.md5'));
 
 await zip('dist', 'cat_open.zip');
 

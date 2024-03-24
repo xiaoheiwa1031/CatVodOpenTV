@@ -1,3 +1,12 @@
+cd nodejs
+cp src/index.config.js src/index.config.js.bak
+sed -i 's#http://192.168.50.60:4567/vod1#VOD1_URL#' src/index.config.js
+sed -i 's#http://192.168.50.60:4567/vod#VOD_URL#' src/index.config.js
+sed -i 's#http://192.168.50.60:4567/bilibili#BILIBILI_URL#' src/index.config.js
+
+npm run build
+mv src/index.config.js.bak src/index.config.js
+cd ..
 
 cp config_open.json config_open.bak.json
 sed -i 's/alist-4945272b-658f-4be7-a20e-98af1c2be973kAUC1tcZ7EsJi4PyovGRwPVReLto0XxKA4QXfciAR4W4G0XwqWRLr1euFY9W2NnE//' \
