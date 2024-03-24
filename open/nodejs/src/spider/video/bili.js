@@ -1,8 +1,7 @@
 import req from '../../util/req.js';
-import CryptoJS from 'crypto-js';
 import Crypto from 'crypto-js';
-import { load } from 'cheerio';
 import pkg from 'lodash';
+
 const { _ } = pkg;
 
 let siteKey = "",
@@ -376,7 +375,7 @@ async function play(inReq, _outResp) {
                 }
             }
 
-            const json = ({
+            return ({
                 parse: 0,
                 url: urls,
                 extra: {
@@ -384,9 +383,6 @@ async function play(inReq, _outResp) {
                 },
                 header: playHeaders
             })
-            console.log(audios)
-            console.log(json)
-            return json
         }
     } catch (e) {
         console.log(e);
