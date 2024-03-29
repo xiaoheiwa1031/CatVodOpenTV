@@ -8,6 +8,9 @@ export default {
     bilibili: {
         url: "http://192.168.50.60:4567/bilibili"
     },
+    youtube: {
+        url: "http://192.168.50.60:4567/youtube"
+    },
     kunyu77: {
         testcfg: {
             bbbb: 'aaaaa',

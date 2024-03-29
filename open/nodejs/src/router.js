@@ -1,6 +1,7 @@
 import xiaoya_tv from './spider/video/xiaoya-tv.js';
 import xiaoya_alist from './spider/video/xiaoya-alist.js';
 import bilibili from './spider/video/bilibili.js';
+import youtube from './spider/video/youtube.js';
 import douban from './spider/video/douban.js';
 import wogg from './spider/video/wogg.js';
 import wobg from './spider/video/wobg.js';
@@ -59,7 +60,7 @@ import vcm3u8 from './spider/video/vcm3u8.js';
 import avm3u8 from './spider/video/avm3u8.js';
 import maiyoux from './spider/video/maiyoux_node.js';
 
-const spiders = [xiaoya_tv, xiaoya_alist, bilibili, douban, wogg, wobg, xxpan, tudou, kunyu77, kkys, nangua, czzy,
+const spiders = [xiaoya_tv, xiaoya_alist, bilibili, youtube, douban, wogg, wobg, xxpan, tudou, kunyu77, kkys, nangua, czzy,
     mayiya, ikanbot, rrys, libvio, baipiaoys, yingso, ttian, subaibai, nongmin, ddys, sharenice, ktv, boo, ttkx, meijumi,
     xinshijue, bili, huya, douyu, anfun, live, cntv, bqr, _360ba, appys, yunpanres, pansearch, upyun, vcm3u8,
     push, alist, _13bqg, wenku, bookan, bengou, laobaigs, coco, copymanga, baozimh];

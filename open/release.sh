@@ -3,6 +3,7 @@ cp src/index.config.js src/index.config.js.bak
 sed -i 's#http://192.168.50.60:4567/vod1#VOD1_URL#' src/index.config.js
 sed -i 's#http://192.168.50.60:4567/vod#VOD_URL#' src/index.config.js
 sed -i 's#http://192.168.50.60:4567/bilibili#BILIBILI_URL#' src/index.config.js
+sed -i 's#http://192.168.50.60:4567/youtube#YOUTUBE_URL#' src/index.config.js
 
 npm run build
 mv src/index.config.js.bak src/index.config.js
