@@ -39,7 +39,7 @@ async function category(inReq, _outResp) {
         let data = Object.entries(extend).map(([key, val] = entry) => {
             return '&' + key + '=' + val;
         })
-        api += data;
+        api += data.join("");
         api += '&f=' + encodeURIComponent(JSON.stringify(extend));
     }
     return await request(api);
@@ -71,6 +71,8 @@ async function test(inReq, outResp) {
         const printErr = function (json) {
             if (json.statusCode && json.statusCode == 500) {
                 console.error(json);
+            } else {
+                console.log(json)
             }
         };
         const prefix = inReq.server.prefix;
@@ -110,7 +112,7 @@ async function test(inReq, outResp) {
                                     .post(`${prefix}/play`)
                                     .payload({
                                         flag: flag,
-                                        id: urls[i].split('$')[1],
+                                        id: urls[i],
                                     });
                                 dataResult.play.push(resp.json());
                             }

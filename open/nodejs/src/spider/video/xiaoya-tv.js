@@ -39,7 +39,7 @@ async function category(inReq, _outResp) {
         let data = Object.entries(extend).map(([key, val] = entry) => {
             return '&' + key + '=' + val;
         })
-        api += data;
+        api += data.join("");
         api += '&f=' + encodeURIComponent(JSON.stringify(extend));
     }
     return await request(api);
