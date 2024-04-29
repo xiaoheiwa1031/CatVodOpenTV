@@ -24,4 +24,4 @@ jobs:
       with:
         name: dist
         path: |
-          nodejs/dist
+          open/nodejs/dist
