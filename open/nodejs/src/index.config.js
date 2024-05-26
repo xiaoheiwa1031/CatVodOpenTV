@@ -43,7 +43,7 @@ export default {
     },
     yiso: {
         url: "https://yiso.fun",
-        cookie: "填入yiso网站的cookie即可"
+        cookie: "JSESSIONID=2B90FF722AA6D489E3B19D726886ED4D; satoken=a7dddbab-4750-47cc-87a4-1083814421b1; cf_clearance=2XdHVkSYNpY7b.AjUPw3vuEbviodVdyBKOXYHHg9QWg-1716734499-1.0.1.1-Rt0TFcovAZBbjdxsRHubCmGpGAdU6TlIhdPcokXjK8_HVeepgqJZODZjTcoLXpfiJU4f2vwcCxJpYA8kBhX1Uw"
     },
     bili: {
         categories: "经典无损音乐合集#帕梅拉#太极拳#健身#舞蹈#音乐#歌曲#MV4K#演唱会4K#白噪音4K#知名UP主#说案#解说#演讲#时事#探索发现超清#纪录片超清#沙雕动画#沙雕穿越#沙雕#平面设计教学#软件教程#实用教程#旅游#风景4K#食谱#美食超清#搞笑#球星#动物世界超清#相声小品#戏曲#儿童#小姐姐4K#热门#旅行探险",
