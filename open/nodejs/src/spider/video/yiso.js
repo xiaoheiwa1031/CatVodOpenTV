@@ -315,7 +315,7 @@ async function test(inReq, outResp) {
 export default {
     meta: {
         key: 'yiso',
-        name: 'YS资源',
+        name: '易搜资源',
         type: 3,
     },
     api: async (fastify) => {
