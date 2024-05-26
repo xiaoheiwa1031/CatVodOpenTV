@@ -20,7 +20,7 @@ import baipiaoys from './spider/video/baipiaoys.js';
 import yingso from './spider/video/yingso.js';
 import ttian from './spider/video/ttian.js';
 import subaibai from './spider/video/subaibai.js';
-import yiso from './spider/video/yiso.js';
+//import yiso from './spider/video/yiso.js';
 //import scys from './spider/video/scys.js';
 import nongmin from './spider/video/nongmin.js';
 import ddys from './spider/video/ddys.js';
