@@ -11,7 +11,7 @@ import tudou from './spider/video/tudou.js';
 //import kunyu77 from './spider/video/kunyu77.js';
 //import kkys from './spider/video/kkys.js';
 import nangua from './spider/video/ng.js';
-import czzy from './spider/video/czzy.js';
+//import czzy from './spider/video/czzy.js';
 import mayiya from './spider/video/mayiya.js';
 import ikanbot from './spider/video/ikanbot.js';
 import rrys from './spider/video/rrys.js';
